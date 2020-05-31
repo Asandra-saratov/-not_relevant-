@@ -9,7 +9,7 @@
     <header>
       <nav>
         <a>
-          <img src="" width="138" height="70" alt="Логотип «Седона»">
+          <img src="img/logo-sedona.svg" width="138" height="70" alt="Логотип «Седона»">
         </a>
         <ul>
           <li><a href="">Информация</a></li>
@@ -22,7 +22,7 @@
 
     <main>
       <p>
-        <img src="img/photo-sedona.jpg" width="" height="" alt="Фото «Седона»">
+        <img src="img/intro-welcome.svg" width="456" height="350" alt="Добро пожаловать в Седону">
       </p>
 
       <section>
@@ -39,7 +39,7 @@
               Седона - не акттракцион для туристов, там течет своя жизнь
             </p>
             <p>
-              <img src="img/town-photo.jpg" width="" height="" alt="Фотография городка">
+              <img src="img/town-photo.jpg" width="800" height="256" alt="Фотография городка">
             </p>
             <ul>
               <li>
@@ -68,7 +68,7 @@
               Да, по нему можно пройти! Если конечно вы осмелитесь
             </p>
             <p>
-              <img src="img/photo-bridge.jpg" width="" height="" alt="Фотография моста дьявола">
+              <img src="img/photo-bridge.jpg" width="800" height="256" alt="Фотография моста дьявола">
             </p>
           </li>
           <li>
@@ -101,13 +101,33 @@
 
       <section>
         <h2>Поиск гостиницы в Седоне</h2>
-        <!--кнопка и форма-->
+        <button>Поиск гостиницы в Седоне</button>
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <p>
+            <label for="start-date">Дата заезда</label>
+            <input id="start-date" type="text" name="arrival-date" placeholder="24 апреля 2017">
+          </p>
+          <p>
+            <label for="and-date">Дата выезда</label>
+            <input id="and-date" type="text" name="departure-date" placeholder="4 июля 2017">
+          </p>
+          <p>
+            <label for="amount-adults">Взрослые</label>
+            <input id="amount-adults" type="number" name="number-adults" placeholder="2">
+          </p>
+          <p>
+            <label for="amount-children">Дети</label>
+            <input id="amount-children" type="number" name="number-children" placeholder="0">
+          </p>
+          <button type="submit">Найти</button>
+
+        </form>
       </section>
 
       <section>
         <h2>Карта</h2>
         <p>
-          <img src="img/map.jpg" width="" height="" alt="Карта">
+          <img src="img/map.jpg" width="1199" height="594" alt="Карта">
         </p>
       </section>
     </main>
@@ -140,7 +160,7 @@
 
       <p>
         website by
-        <a href="https://htmlacademy.ru"><img src="" width="" height="" alt="HTML Academy"></a>
+        <a href="https://htmlacademy.ru"><img src="img\logo-htmlacademy.svg" width="115" height="41" alt="HTML Academy"></a>
       </p>
     </footer>
 
