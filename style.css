@@ -1,0 +1,74 @@
+/* Variables */
+
+:root {
+  --basic-white: #FFFFFF;
+  --basic-black: #000000;
+  --basic-light-brown: #766357;
+  --basic-brown: #604E43;
+  --basic-light-blue: #81B3D2;
+  --basic-blue: #669EC0;
+  --basic-light-gray: #EEEEEE;
+  --basic-gray: #A9A9A9;
+
+  --special-muddy-brown: #503E33;
+  --special-muddy-blue: #5496BD;
+
+}
+
+/* Global */
+
+body {
+  min-width: 1280px;
+  margin: 0;
+  padding: 0;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--basic-black);
+  text-transform: uppercase;
+  background-color: var(--basic-white);
+  background-image: url("img/photo-sedona.jpg");
+/*  background-position: top center; */
+  background-repeat: no-repeat;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Main navigation */
+.main-navigation {
+  line-height: 26px;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+}
+
+.site-navigation {
+  list-style: none;
+  font-weight: bold;
+}
+
+.site-navigation a {
+  color: var(--basic-black);
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+color: var(--basic-light-blue);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

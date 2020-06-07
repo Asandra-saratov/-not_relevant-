@@ -4,25 +4,28 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap">
   </head>
-  <body>
+  <body class="page-body">
 
-    <header>
-      <nav>
-        <a>
+    <header class="main-header">
+      <nav class="main-navigation">
+        <a class="header-logo"> 
           <img src="img/logo-sedona.svg" width="138" height="70" alt="Логотип «Седона»">
         </a>
-        <ul>
-          <li><a href="">Информация</a></li>
-          <li><a href="">Фото и видео</a></li>
-          <li><a href="">Карта штата</a></li>
-          <li><a href="catalog.html">Гостиницы</a></li>
-        </ul>
+        <div class="container">
+          <ul class="site-navigation">
+            <li><a href="">Информация</a></li>
+            <li><a href="">Фото и видео</a></li>
+            <li><a href="">Карта штата</a></li>
+            <li><a href="catalog.html">Гостиницы</a></li>
+          </ul>
+        </div>
       </nav>
     </header>
 
-    <main>
-      <p>
+    <main class="container">
+      <p class="intro-welcome">
         <img src="img/intro-welcome.svg" width="456" height="350" alt="Добро пожаловать в Седону">
       </p>
 
@@ -31,9 +34,9 @@
         <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
       </section>
 
-      <section>
+      <section class="features">
         <h2 class="visually-hidden">Преимущества</h2>
-        <ol>
+        <ol class="features-list">
           <li>
             <h3>Настоящий городок</h3>
             <p>
@@ -46,7 +49,7 @@
               <li>
                 <h3>Жилье</h3>
                 <p>
-                  Рекомендуем пожить в настоящем мотеле, как как в кино!
+                  Рекомендуем пожить в настоящем мотеле, всё как в кино!
                 </p>
               </li>
               <li>
@@ -145,7 +148,7 @@
 
       <section>
         <h2 class="visually-hidden">Давайте дружить</h2>
-        <ul>
+        <ul class="">
           <li>
             <a href="">Твиттер</a>
           </li>
