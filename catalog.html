@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
 
@@ -22,7 +23,7 @@
 
     <main>
       <section>
-        <h2>Фильтр</h2>
+        <h2 class="visually-hidden">Фильтр</h2>
         <form action="https://echo.htmlacademy.ru" method="get">
           <fieldset>
             <legend>Инфраструктура:</legend>
@@ -62,22 +63,26 @@
 
           <fieldset>
             <legend>Стоимость в сутки (Р):</legend>
-            <p>
-              <label for="cost-from"></label>
-              <input id="cost-from" type="number" name="filter-cost-from" placeholder="от 0">
-            </p>
-            <p>
-              <label for="cost-up"></label>
-              <input id="cost-up" type="number" name="filter-cost-up" placeholder="до 3000">
-            </p>
+            <label>
+              от <input type="number" name="min-price" value="0">
+            </label>
+            <label>
+              до <input type="number" name="max-price" value="3000">
+            </label>
           </fieldset>
           <button type="submit">Показать</button>
         </form>
-        <!-- результат??? -->
+        <p>Найдено: 3</p>
+        <h3>Сортировка:</h3>
+          <ul>
+            <li>По цене</li>
+            <li>По типу</li>
+            <li>По рейтингу</li>
+          </ul>
       </section>
 
       <section>
-        <h2>Список гостиниц</h2>
+        <h2 class="visually-hidden">Список гостиниц</h2>
         <ul>
           <li>
             <h3>AMARA RESORT & SPA</h3>
@@ -174,7 +179,7 @@
 
     <footer>
       <section>
-        <h2>Как нас найти</h2>
+        <h2 class="visually-hidden">Как нас найти</h2>
         <p>
           <a href="https://www.instagram.com/explore/tags/visitsedona/">#visitsedona</a>
         </p>
@@ -184,7 +189,7 @@
       </section>
 
       <section>
-        <h2>Давайте дружить</h2>
+        <h2 class="visually-hidden">Давайте дружить</h2>
         <ul>
           <li>
             <a href="">Твиттер</a>
