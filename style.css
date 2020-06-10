@@ -3,16 +3,30 @@
 :root {
   --basic-white: #FFFFFF;
   --basic-black: #000000;
+  --basic-light-black: #333333;
   --basic-light-brown: #766357;
   --basic-brown: #604E43;
   --basic-light-blue: #81B3D2;
   --basic-blue: #669EC0;
   --basic-light-gray: #EEEEEE;
+  --basic-dark-gray: #666666;
+  --basic-almost-white: #F2F2F2;
   --basic-gray: #A9A9A9;
 
+/* под вопросом
   --special-muddy-brown: #503E33;
-  --special-muddy-blue: #5496BD;
+  --special-muddy-blue: #5496BD;*/
+}
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /* Global */
@@ -24,7 +38,7 @@ body {
   font-family: 'PT Sans', sans-serif;
   font-size: 14px;
   line-height: 21px;
-  color: var(--basic-black);
+  color: var(--basic-light-black);
   text-transform: uppercase;
   background-color: var(--basic-white);
   background-image: url("img/photo-sedona.jpg");
@@ -53,22 +67,91 @@ img {
   font-weight: bold;
 }
 
-.site-navigation a {
+.site-navigation a,
+.list-item a {
   color: var(--basic-black);
 }
 
 .site-navigation a:hover,
-.site-navigation a:focus {
-color: var(--basic-light-blue);
+.list-item a:hover,
+.site-navigation a:focus,
+.list-item a:focus {
+  color: var(--basic-light-blue);
 }
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+.list,
+.sorting ul {
+  list-style: none;
+}
+
+.site-navigation a:active,
+.list-item a:active {
+    color: var(--basic-dark-gray);
+}
+
+/* sorting*/
+
+.sorting-result {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.sorting {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.sorting-price {
+  color: var(--basic-light-blue);
+}
+
+.sorting h3 {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: normal;
+}
+
+.sorting-price a {
+  color: var(--basic-light-blue);
+}
+
+.sorting-type a,
+.sorting-rating a {
+    color: var(--basic-gray);
+    border-bottom: 1px dotted;
+}
+
+.sorting-type a:hover,
+.sorting-rating a:hover,
+.sorting-rating a:focus,
+.sorting-type a:focus {
+  color: var(--basic-light-blue);
+}
+
+.sorting-type a:active,
+.sorting-rating a:active {
+  color: var(--basic-black);
+}
+
+/* catalog */
+
+.list-catalog span {
+  color: (--basic-dark-gray);
+  font-size: 14px;
+  line-height: 21px;
+}
+
+/*footer*/
+.footer-contacts a {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  color: var(--basic-black);
+}
+
+.link {
+  font-size: 14px;
+  line-height: 26px;
+  color: var(--basic-black);
 }

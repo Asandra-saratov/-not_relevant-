@@ -75,20 +75,22 @@
           </fieldset>
           <button type="submit">Показать</button>
         </form>
-        <p>Найдено: 3</p>
-        <h3>Сортировка:</h3>
-          <ul class="site-navigation">
-            <li>По цене</li>
-            <li>По типу</li>
-            <li>По рейтингу</li>
-          </ul>
+        <span class="sorting-result">Найдено: 3</span>
+        <div class="sorting">
+          <h3>Сортировка:</h3>
+            <ul>
+              <li class="sorting-price"><a href="">По цене</a></li>
+              <li class="sorting-type"><a href="">По типу</a></li>
+              <li class="sorting-rating"><a href="">По рейтингу</a></li>
+            </ul>
+        </div>
       </section>
 
-      <section>
+      <section class="list-catalog">
         <h2 class="visually-hidden">Список гостиниц</h2>
-        <ul class="site-navigation">
+        <ul class="list">
           <li>
-            <h3>AMARA RESORT & SPA</h3>
+            <h3 class="list-item"><a href="">AMARA RESORT & SPA</a></h3>
             <p>
               <img src="img/hotel.jpg" width="135" height="90" alt="AMARA RESORT & SPA">
             </p>
@@ -107,7 +109,7 @@
             </span>
             <p>
               <fieldset>
-                <legend>Рейтинг гостиницы</legend>
+                <legend class="visually-hidden">Рейтинг гостиницы</legend>
                 <input type="radio" name="rating-hotel" value="1" aria-label="Плохо">
                 <input type="radio" name="rating-hotel" value="2" aria-label="Нормально">
                 <input type="radio" name="rating-hotel" value="3" aria-label="Хорошо">
@@ -118,7 +120,7 @@
           </li>
 
           <li>
-            <h3>DESERT QUAIL INN</h3>
+            <h3 class="list-item"><a href="">DESERT QUAIL INN</a></h3>
             <p>
               <img src="img/motel.jpg" width="135" height="90" alt="DESERT QUAIL INN">
             </p>
@@ -137,7 +139,7 @@
             </span>
             <p>
               <fieldset>
-                <legend>Рейтинг мотеля</legend>
+                <legend class="visually-hidden">Рейтинг мотеля</legend>
                 <input type="radio" name="rating-motel" value="1" aria-label="Плохо">
                 <input type="radio" name="rating-motel" value="2" aria-label="Нормально">
                 <input type="radio" name="rating-motel" value="3" aria-label="Хорошо" checked>
@@ -148,7 +150,7 @@
           </li>
 
           <li>
-            <h3>VILLAS AT POCO DIABLO</h3>
+            <h3 class="list-item"><a href="">VILLAS AT POCO DIABLO</a></h3>
             <p>
               <img src="img/apartments.jpg" width="135" height="90" alt="VILLAS AT POCO DIABLO">
             </p>
@@ -167,7 +169,7 @@
             </span>
             <p>
               <fieldset>
-                <legend>Рейтинг апартаментов</legend>
+                <legend class="visually-hidden">Рейтинг апартаментов</legend>
                 <input type="radio" name="rating-apartments" value="1" aria-label="Плохо">
                 <input type="radio" name="rating-apartments" value="2" aria-label="Нормально" checked>
                 <input type="radio" name="rating-apartments" value="3" aria-label="Хорошо" >
@@ -181,7 +183,7 @@
     </main>
 
     <footer>
-      <section>
+      <section class="footer-contacts">
         <h2 class="visually-hidden">Как нас найти</h2>
         <p>
           <a href="https://www.instagram.com/explore/tags/visitsedona/">#visitsedona</a>
@@ -193,7 +195,7 @@
 
       <section>
         <h2 class="visually-hidden">Давайте дружить</h2>
-        <ul class="">
+        <ul class="list">
           <li>
             <a href="">Твиттер</a>
           </li>
@@ -206,7 +208,7 @@
         </ul>
       </section>
 
-      <p>
+      <p class="link">
         website by
         <a href="https://htmlacademy.ru"><img src="img\logo-htmlacademy.svg" width="115" height="41" alt="HTML Academy"></a>
       </p>
