@@ -35,15 +35,13 @@ body {
   min-width: 1280px;
   margin: 0;
   padding: 0;
+  text-align: center;
   font-family: 'PT Sans', sans-serif;
   font-size: 14px;
   line-height: 21px;
   color: var(--basic-light-black);
   text-transform: uppercase;
   background-color: var(--basic-white);
-  background-image: url("img/photo-sedona.jpg");
-/*  background-position: top center; */
-  background-repeat: no-repeat;
 }
 
 a {
@@ -55,16 +53,22 @@ img {
   height: auto;
 }
 
-/* Main navigation */
-.main-navigation {
-  line-height: 26px;
-  color: var(--basic-black);
-  background-color: var(--basic-white);
+.intro-welcome {
+  background-image: url("img/photo-sedona.jpg");
+  min-height: 509px;
+  background-size: initial;
+  background-position: top center;
+  background-repeat: no-repeat;
+  /*background-color:?*/
 }
+
+/* sitenav-igation */
 
 .site-navigation {
   list-style: none;
   font-weight: bold;
+  line-height: 26px;
+  background-color: transparent;
 }
 
 .site-navigation a,
@@ -80,13 +84,63 @@ img {
 }
 
 .list,
-.sorting ul {
+.sorting ul,
+.features li {
   list-style: none;
 }
 
 .site-navigation a:active,
 .list-item a:active {
     color: var(--basic-dark-gray);
+}
+
+/*button*/
+
+.button-blue {
+  font: inherit;
+  text-align: center;
+  color: var(--basic-white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--basic-light-blue);
+  border: none;
+}
+
+.button-brown {
+  font: inherit;
+  text-align: center;
+  color: var(--basic-white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--basic-light-brown);
+  border: none;
+}
+
+.button-show {
+  font: inherit;
+  text-align: center;
+  color: var(--basic-white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 2px;
+  border-color: var(--basic-white);
+}
+
+/*catalog*/
+
+.filter,
+.list-catalog {
+  text-align: left;
+}
+
+.filter {
+  background-image: url("img/background-filter.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  min-height: 217px;
+  background-size: initial;
+  /*background-color:?*/
 }
 
 /* sorting*/
@@ -118,8 +172,8 @@ img {
 
 .sorting-type a,
 .sorting-rating a {
-    color: var(--basic-gray);
-    border-bottom: 1px dotted;
+  color: var(--basic-gray);
+  border-bottom: 1px dotted;
 }
 
 .sorting-type a:hover,
