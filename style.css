@@ -178,11 +178,6 @@ img {
   padding: 0;
 }
 
-.features-list p {
-  color: var(--basic-light-black);
-
-}
-
 .features-list h3 {
   font-size: 21px;
   line-height: 21px;
@@ -193,15 +188,9 @@ img {
   grid-template-columns: 1fr 2fr;
   text-align: center;
   box-sizing: border-box;
+  color: var(--basic-white);
   background-color: var(--basic-light-blue);
   outline: 5px solid rgba(255, 0, 0 , 0.3);
-}
-
-.features-first-block p,
-.features-third-block p,
-.features-first-block h3,
-.features-third-block h3 {
-  color: var(--basic-white);
 }
 
 .features-second-block {
@@ -217,6 +206,7 @@ img {
   grid-template-columns: 2fr 1fr;
   text-align: center;
   box-sizing: border-box;
+  color: var(--basic-white);
   background-color: var(--basic-light-blue);
   outline: 5px solid rgba(255, 0, 0 , 0.3);
 }
