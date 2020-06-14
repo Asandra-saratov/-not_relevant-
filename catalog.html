@@ -13,13 +13,15 @@
         <a class="header-logo" href="index.html">
           <img src="img/logo-sedona.svg" width="138" height="70" alt="Логотип «Седона»">
         </a>
-        <div class="container">
-          <ul class="site-navigation">
-            <li><a href="">Информация</a></li>
-            <li><a href="">Фото и видео</a></li>
-            <li><a href="">Карта штата</a></li>
-            <li><a href="catalog.html">Гостиницы</a></li>
-          </ul>
+        <div class="main-navigation-wrapper">
+          <div class="container">
+            <ul class="site-navigation">
+              <li><a href="">Информация</a></li>
+              <li><a href="">Фото и видео</a></li>
+              <li><a href="">Карта штата</a></li>
+              <li><a href="catalog.html">Гостиницы</a></li>
+            </ul>
+          </div>
         </div>
       </nav>
     </header>
@@ -99,55 +101,63 @@
 
       <section class="list-catalog">
         <h2 class="visually-hidden">Список гостиниц</h2>
-        <ul>
-          <li>
-            <h3 class="list-item-catalog"><a href="">AMARA RESORT & SPA</a></h3>
+        <div class="wrapper">
+
+          <div  class="photo-hotel">
+            <img src="img/hotel.jpg" width="135" height="90" alt="AMARA RESORT & SPA">
+          </div>
+
+            <div class="price-hotel">
+              <h3 class="list-item-catalog"><a href="">AMARA RESORT & SPA</a></h3>
+
+              <p>
+                Гостиница
+                от 4000 р.
+              </p>
+
+              <p>
+                <a href="" class="button-blue">Подробнее</a>
+                <a href="" class="button-brown">Забронировать</a>
+              </p>
+            </div>
+
+            <div class="rating">
+              <p>
+                <fieldset>
+                  <legend class="visually-hidden">Рейтинг гостиницы</legend>
+                  <input type="radio" name="rating-hotel" value="1" aria-label="Плохо">
+                  <input type="radio" name="rating-hotel" value="2" aria-label="Нормально">
+                  <input type="radio" name="rating-hotel" value="3" aria-label="Хорошо">
+                  <input type="radio" name="rating-hotel" value="4" aria-label="Отлично" checked>
+                </fieldset>
+              </p>
+              <span>
+                рейтинг: 8,5
+              </span>
+            </div>
+          </div>
+
+        <div class="wrapper">
+
+          <div class="photo-motel">
+            <img src="img/motel.jpg" width="135" height="90" alt="DESERT QUAIL INN">
+          </div>
+
+          <div class="price-motel">
+            <h3 class="list-item-catalog"><a href="">DESERT QUAIL INN</a></h3>
+
             <p>
-              <img src="img/hotel.jpg" width="135" height="90" alt="AMARA RESORT & SPA">
-            </p>
-            <p>
-              Гостиница
-            </p>
-            <p>
-              от 4000 р.
+              Мотель
+
+              от 3000 р.
             </p>
             <p>
               <a href="" class="button-blue">Подробнее</a>
               <a href="" class="button-brown">Забронировать</a>
             </p>
-            <span>
-              рейтинг: 8,5
-            </span>
-            <p>
-              <fieldset>
-                <legend class="visually-hidden">Рейтинг гостиницы</legend>
-                <input type="radio" name="rating-hotel" value="1" aria-label="Плохо">
-                <input type="radio" name="rating-hotel" value="2" aria-label="Нормально">
-                <input type="radio" name="rating-hotel" value="3" aria-label="Хорошо">
-                <input type="radio" name="rating-hotel" value="4" aria-label="Отлично" checked>
-              </fieldset>
-            </p>
+          </div>
 
-          </li>
-
-          <li>
-            <h3 class="list-item"><a href="">DESERT QUAIL INN</a></h3>
-            <p>
-              <img src="img/motel.jpg" width="135" height="90" alt="DESERT QUAIL INN">
-            </p>
-            <p>
-              Мотель
-            </p>
-            <p>
-              от 3000 р.
-            </p>
-            <p>
-              <a href="" class="link-blue">Подробнее</a>
-              <a href="" class="link-brown">Забронировать</a>
-            </p>
-            <span>
-              рейтинг: 8,9
-            </span>
+          <div>
             <p>
               <fieldset>
                 <legend class="visually-hidden">Рейтинг мотеля</legend>
@@ -157,27 +167,33 @@
                 <input type="radio" name="rating-motel" value="4" aria-label="Отлично">
               </fieldset>
             </p>
-
-          </li>
-
-          <li>
-            <h3 class="list-item"><a href="">VILLAS AT POCO DIABLO</a></h3>
-            <p>
-              <img src="img/apartments.jpg" width="135" height="90" alt="VILLAS AT POCO DIABLO">
-            </p>
-            <p>
-              Апартаменты
-            </p>
-            <p>
-              от 2000 р.
-            </p>
-            <p>
-              <a href="" class="link-blue">Подробнее</a>
-              <a href="" class="link-brown">Забронировать</a>
-            </p>
             <span>
-              рейтинг: 9,2
+              рейтинг: 8,9
             </span>
+          </div>
+        </div>
+
+          <div  class="wrapper">
+
+            <div  class="photo-apartments">
+              <img src="img/apartments.jpg" width="135" height="90" alt="VILLAS AT POCO DIABLO">
+            </div>
+
+            <div class="price-apartments">
+              <h3 class="list-item-catalog"><a href="">VILLAS AT POCO DIABLO</a></h3>
+
+              <p>
+                Апартаменты
+
+                от 2000 р.
+              </p>
+              <p>
+                <a href="" class="button-blue">Подробнее</a>
+                <a href="" class="button-brown">Забронировать</a>
+              </p>
+            </div>
+
+          <div>
             <p>
               <fieldset>
                 <legend class="visually-hidden">Рейтинг апартаментов</legend>
@@ -187,9 +203,12 @@
                 <input type="radio" name="rating-apartments" value="4" aria-label="Отлично">
               </fieldset>
             </p>
+            <span>
+              рейтинг: 9,2
+            </span>
+          </div>
+        </div>
 
-          </li>
-        </ul>
       </section>
     </main>
 

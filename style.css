@@ -68,6 +68,9 @@ img {
 .intro-welcome {
   background-image: url("img/photo-sedona.jpg");
   min-height: 509px;
+  text-align: center;
+  padding-top: 77px;
+  margin-bottom: 42px;
   background-size: initial;
   background-position: top center;
   background-repeat: no-repeat;
@@ -75,21 +78,30 @@ img {
 }
 
 .title h1 {
+  text-align: center;
   font-size: 21px;
   line-height: 26px;
+  width: 470px;
+  padding: 0 20px 23px 20px;
 }
+
+.title p{
+  text-align: center;
+  margin-bottom: 16px;
+}
+
 
 /*main-header */
 .main-header {
-  margin-bottom: 70px;
-
-  outline: 5px solid rgba(0, 255, 0, 0.3);
-  outline-offset: -5px;
+  margin: 0;
+  padding: 0;
 }
 
 .main-header-logo {
   width: 138px;
   height: 70px;
+  margin: 0;
+  padding: 0;
   outline: 5px solid rgba(255, 0, 0, 0.3);
   outline-offset: -5px;
 }
@@ -121,7 +133,7 @@ img {
 
 .main-navigation-wrapper {
   width: 100%;
-  margin-bottom: 60px;
+
 }
 
 .container {
@@ -150,15 +162,14 @@ img {
 .footer-social-list,
 .sorting ul,
 .features li,
-.filter li,
-.list-catalog li {
+.filter li {
   list-style: none;
 }
 
 /*features*/
 
 .features {
-  margin-bottom: 61px;
+  margin-top: 51px;
   outline: 5px solid rgba(255, 0, 0 , 0.3);
 }
 
@@ -175,7 +186,6 @@ img {
 .features-list h3 {
   font-size: 21px;
   line-height: 21px;
-
 }
 
 .features-first-block {
@@ -183,8 +193,15 @@ img {
   grid-template-columns: 1fr 2fr;
   text-align: center;
   box-sizing: border-box;
+  background-color: var(--basic-light-blue);
   outline: 5px solid rgba(255, 0, 0 , 0.3);
+}
 
+.features-first-block p,
+.features-third-block p,
+.features-first-block h3,
+.features-third-block h3 {
+  color: var(--basic-white);
 }
 
 .features-second-block {
@@ -193,7 +210,6 @@ img {
   text-align: center;
   box-sizing: border-box;
   outline: 5px solid rgba(255, 0, 0 , 0.3);
-
 }
 
 .features-third-block {
@@ -201,6 +217,7 @@ img {
   grid-template-columns: 2fr 1fr;
   text-align: center;
   box-sizing: border-box;
+  background-color: var(--basic-light-blue);
   outline: 5px solid rgba(255, 0, 0 , 0.3);
 }
 
@@ -212,7 +229,6 @@ img {
   box-sizing: border-box;
   outline: 5px solid rgba(255, 0, 0 , 0.3);
 }
-
 
 
 /*button*/
@@ -276,7 +292,6 @@ img {
 /*затемнение текста кнопки при нажатии???*/
 
 
-
 /*hotel-search*/
 .form-search input:not([type=submit]) {
   font: inherit;
@@ -315,21 +330,56 @@ img {
   line-height: 21px;
 }
 
-.list-catalog {
+.list-catalog,
+.wrapper {
   outline: 5px solid rgba(0, 0, 255, 0.7);
-outline-offset: -5px;
+  outline-offset: -5px;
+}
+
+.photo-hotel,
+.photo-motel,
+.photo-apartments {
+  margin-left: 73px;
+  outline: 5px solid rgba(0, 0, 255, 0.7);
+  outline-offset: -5px;
+}
+
+.price-hotel {
+  padding-left: 30px;
+  outline: 5px solid rgba(225, 0, 0, 0.7);
+  outline-offset: -5px;
+}
+
+.price-motel {
+  padding-left: 30px;
+}
+
+.price-apartments {
+  padding-left: 30px;
+}
+
+.rating {
+  float: right;
+  outline: 5px solid rgba(0, 0, 255, 0.7);
+  outline-offset: -5px;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 208px 1fr 200px;
 }
 
 
 /*filter*/
 
 .filter {
+  min-height: 217px;
+  color: var(--basic-white);
+  background-size: initial;
   background-image: url("img/background-filter.jpg");
+  background-color: var(--basic-blue);
   background-position: top center;
   background-repeat: no-repeat;
-  min-height: 217px;
-  background-size: initial;
-  background-color: var(--basic-blue);
   outline: 5px solid rgba(0, 255, 255, 0.3);
   outline-offset: -5px;
 }
@@ -347,6 +397,8 @@ outline-offset: -5px;
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
+  margin-right: 46px;
+  margin-left: 73px;
 }
 
 .sorting {
@@ -354,7 +406,6 @@ outline-offset: -5px;
   justify-content: start;
   font-size: 12px;
   line-height: 18px;
-  margin: 0;
 }
 
 .sorting li {
