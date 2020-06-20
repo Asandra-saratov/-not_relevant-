@@ -65,8 +65,10 @@ img {
   align-content: start;
 }
 
+/*main*/
+
 .intro-welcome {
-  background-image: url("img/photo-sedona.jpg");
+  background-image: url(../img/photo-sedona.jpg);
   min-height: 509px;
   text-align: center;
   padding-top: 77px;
@@ -74,18 +76,15 @@ img {
   background-size: initial;
   background-position: top center;
   background-repeat: no-repeat;
-  /*background-color:?*/
+  background-color: var(--basic-light-blue);
 }
 
 .title h1 {
   text-align: center;
-  font-size: 21px;
-  line-height: 26px;
-  width: 470px;
-  padding: 0 20px 23px 20px;
+
 }
 
-.title p{
+.title p {
   text-align: center;
   margin-bottom: 16px;
 }
@@ -142,7 +141,7 @@ img {
   padding: 0 10px;
 }
 
-.main-navigation-wrapper .container{
+.main-navigation ul .container{
   display: flex;
   justify-content: space-between;
 }
@@ -170,12 +169,11 @@ img {
 
 .features {
   margin-top: 51px;
-  outline: 5px solid rgba(255, 0, 0 , 0.3);
 }
 
 .features-list {
   margin: 0;
-  padding: 0;
+  padding: 0px;
 }
 
 .features-list h3 {
@@ -189,16 +187,18 @@ img {
   text-align: center;
   box-sizing: border-box;
   color: var(--basic-white);
+}
+
+.features-first-block div {
   background-color: var(--basic-light-blue);
-  outline: 5px solid rgba(255, 0, 0 , 0.3);
+  max-height: 256px;
 }
 
 .features-second-block {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;;
+  grid-template-columns: 1fr 1fr 1fr;
   text-align: center;
   box-sizing: border-box;
-  outline: 5px solid rgba(255, 0, 0 , 0.3);
 }
 
 .features-third-block {
@@ -206,9 +206,13 @@ img {
   grid-template-columns: 2fr 1fr;
   text-align: center;
   box-sizing: border-box;
+  padding: 0;
   color: var(--basic-white);
+}
+
+.features-third-block div {
   background-color: var(--basic-light-blue);
-  outline: 5px solid rgba(255, 0, 0 , 0.3);
+  max-height: 256px;
 }
 
 .features-fourth-block {
@@ -217,7 +221,7 @@ img {
   background-color: var(--basic-light-gray);
   text-align: center;
   box-sizing: border-box;
-  outline: 5px solid rgba(255, 0, 0 , 0.3);
+  margin-top: 0;
 }
 
 
@@ -307,7 +311,7 @@ img {
 }
 
 .calendar {
-  background-image: url("../img/calendar.svg");
+  background-image: url(../img/calendar.svg);
   background-position: 270px center;
   background-repeat: no-repeat;
   background-color: transparent;
@@ -366,12 +370,10 @@ img {
   min-height: 217px;
   color: var(--basic-white);
   background-size: initial;
-  background-image: url("img/background-filter.jpg");
+  background-image: url(../img/background-filter.jpg);
   background-color: var(--basic-blue);
   background-position: top center;
   background-repeat: no-repeat;
-  outline: 5px solid rgba(0, 255, 255, 0.3);
-  outline-offset: -5px;
 }
 
 .filter-block {
@@ -381,14 +383,79 @@ img {
   align-content: start;
 }
 
+.filter fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.price-controls {
+  position: relative;
+  border: 2px solid var(--basic-white);
+  height: 36px;
+  width: 317px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.price-controls label {
+  display: inline-block;
+}
+
+.min-price,
+.max-price {
+  width: 156px;
+  text-align: center;
+}
+
+.price-controls input {
+  border: none;
+  width: 50px;
+  background-color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  color: var(--basic-white);
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: var(--basic-gray);
+  width: 317px;
+}
+
+.range-controls .bar {
+  width: 233px;
+  height: 2px;
+  background: var(--basic-white);
+}
+
+.range-controls .toggle {
+ position: relative;
+  width: 4px;
+  height: 4px;
+  padding: 0;
+  border: 8px solid var(--basic-white);
+  background-color: var(--basic-gray);
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 var(--basic-gray);
+  cursor: pointer;
+}
+
+.range-controls .toggle-min {
+  top: -10px;
+}
+
+.range-controls .toggle-max {
+  left: 233px;
+  top: -30px;
+}
+
 /* sorting*/
 
 .sorting-result {
   font-weight: bold;
   font-size: 21px;
-  line-height: 26px;
-  margin-right: 46px;
-  margin-left: 73px;
+
 }
 
 .sorting {
@@ -437,7 +504,7 @@ img {
 
 /*footer*/
 
-.footer .container {
+.footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
