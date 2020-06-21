@@ -36,7 +36,6 @@ body {
   min-width: 1280px;
   margin: 0;
   padding: 0;
-  /*text-align: center;*/
   font-family: 'PT Sans', sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -69,10 +68,10 @@ img {
 
 .intro-welcome {
   background-image: url(../img/photo-sedona.jpg);
-  min-height: 509px;
+  min-height: 433px;
   text-align: center;
   padding-top: 77px;
-  margin-bottom: 42px;
+  margin-top: auto;
   background-size: initial;
   background-position: top center;
   background-repeat: no-repeat;
@@ -89,29 +88,48 @@ img {
   margin-bottom: 16px;
 }
 
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
 
 /*main-header */
+
 .main-header {
   margin: 0;
   padding: 0;
 }
 
 .main-header-logo {
+  position: absolute;
+  left: 50%;
+  margin-left: -69px;
   width: 138px;
   height: 70px;
-  margin: 0;
-  padding: 0;
-  outline: 5px solid rgba(255, 0, 0, 0.3);
-  outline-offset: -5px;
 }
 
 .site-navigation {
+  display: flex;
+  flex-wrap: wrap;
   width: 1200px;
   margin: 0;
   padding: 0;
-  outline: 5px solid rgba(0, 255, 255, 0.3);
-  outline-offset: -5px;
   list-style: none;
+}
+
+.site-navigation li {
+  display: inline-block;
+  vertical-align: middle;
+  padding-top: 14px;
+  padding-bottom: 16px;
+  padding-left: 73px;
+  padding-right: 72px;
+}
+
+.site-navigation li:nth-child(2) {
+  margin-right: 25%;
+  padding-left: 35px;
 }
 
 /* main-navigation  */
@@ -130,16 +148,6 @@ img {
   color: var(--basic-black);
 }
 
-.main-navigation-wrapper {
-  width: 100%;
-
-}
-
-.container {
-  width: 1200px;
-  margin: 0 auto;
-  padding: 0 10px;
-}
 
 .main-navigation ul .container{
   display: flex;
@@ -250,12 +258,14 @@ img {
 .button-show {
   font: inherit;
   text-align: center;
+  width: 137px;
+  padding: 6px 0;
+  margin-left: 25%;
   color: var(--basic-white);
   vertical-align: middle;
   text-transform: uppercase;
   background-color: transparent;
-  border: 2px;
-  border-color: var(--basic-white);
+  border: 2px solid var(--basic-white);
 }
 
 .button-show:hover {
@@ -369,6 +379,9 @@ img {
 .filter {
   min-height: 217px;
   color: var(--basic-white);
+  padding-left: 72px;
+  padding-top: 26px;
+  box-sizing: border-box;
   background-size: initial;
   background-image: url(../img/background-filter.jpg);
   background-color: var(--basic-blue);
@@ -378,9 +391,26 @@ img {
 
 .filter-block {
   display: grid;
-  grid-template-columns: 300px 300px 1fr;
-  margin: 0;
+  grid-template-columns: 253px 253px 1fr;
   align-content: start;
+}
+
+.filter-block li {
+  padding-bottom: 25px;
+}
+
+.filter-item {
+  padding-left: 230px;
+}
+
+.filter-block legend {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: bold;
+}
+
+.filter-block ul {
+  padding: 0;
 }
 
 .filter fieldset {
@@ -396,16 +426,17 @@ img {
   width: 317px;
   margin-bottom: 20px;
   margin-top: 10px;
+  background-image: url(../img/Rectangle.png);
+  background-position: center;
+  background-repeat: no-repeat;
 }
+
 
 .price-controls label {
   display: inline-block;
-}
-
-.min-price,
-.max-price {
-  width: 156px;
-  text-align: center;
+  width: 100px;
+  padding-left: 55px;
+  padding-top: 5px;
 }
 
 .price-controls input {
@@ -424,13 +455,13 @@ img {
 }
 
 .range-controls .bar {
-  width: 233px;
+  width: 263px;
   height: 2px;
   background: var(--basic-white);
 }
 
 .range-controls .toggle {
- position: relative;
+  position: relative;
   width: 4px;
   height: 4px;
   padding: 0;
@@ -446,7 +477,7 @@ img {
 }
 
 .range-controls .toggle-max {
-  left: 233px;
+  left: 263px;
   top: -30px;
 }
 
