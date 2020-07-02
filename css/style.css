@@ -205,7 +205,7 @@ img {
   color: var(--basic-white);
 }
 
-.features-first-block div {
+.features-first-block span {
   background-color: var(--basic-light-blue);
   max-height: 256px;
 }
@@ -230,7 +230,7 @@ img {
   margin-top: 60px;
 }
 
-.features-second-block li {
+.features-second-block span {
   padding: 80px 59px 70px 56px;
 }
 
@@ -261,7 +261,7 @@ img {
   color: var(--basic-white);
 }
 
-.features-third-block div {
+.features-third-block span {
   background-color: var(--basic-light-blue);
   max-height: 256px;
 }
@@ -275,7 +275,7 @@ img {
   margin-top: -6px;
 }
 
-.features-fourth-block li {
+.features-fourth-block span {
   padding: 47px 96px 65px 58px;
 }
 
