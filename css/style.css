@@ -272,7 +272,7 @@ img {
   background-color: var(--basic-light-gray);
   text-align: center;
   box-sizing: border-box;
-  margin-top: 0;
+  margin-top: -6px;
 }
 
 .features-fourth-block li {
@@ -293,6 +293,9 @@ img {
   text-transform: uppercase;
   background-color: var(--basic-light-blue);
   border: none;
+  font-weight: bold;
+  margin-right: 6px;
+  padding: 3px 16px 3px 17px;
 }
 
 .button-brown {
@@ -305,8 +308,8 @@ img {
   text-transform: uppercase;
   background-color: var(--basic-light-brown);
   border: none;
-  padding: 0;
-  margin: 0;
+  font-weight: bold;
+  padding: 3px 16px 3px 17px;
 }
 
 .button-show {
@@ -439,14 +442,13 @@ border: none;
 
 .calendar {
   position: absolute;
-right: 65px;
-top: 78px;
+  right: 65px;
+  top: 78px;
   width: 21px;
   height: 22px;
   background-image: url(../img/calendar.svg);
-color: var(--basic-gray);
+  color: var(--basic-gray);
   background-repeat: no-repeat;
-
 }
 
 .form-search input[name="arrival-date"],
@@ -460,15 +462,13 @@ color: var(--basic-gray);
 .form-search input[name="number-adults"],
 .form-search input[name="number-children"] {
   width: 74px;
-margin: 0;
-text-align: center;
+  margin: 0;
+  text-align: center;
   padding-top: 6px;
   padding-bottom: 6px;
 }
 
-
-
-.div {
+.data {
   display: flex;
   justify-content: space-between;
   margin-bottom: 29px;
@@ -490,45 +490,50 @@ text-align: center;
   color: var(--basic-dark-gray);
   font-size: 14px;
   line-height: 21px;
-}
+  background-color: var(--basic-almost-white);
+  position: absolute;
+  margin-left: 17px;
+  margin-top: 96px;
 
-.list-catalog,
-.wrapper {
-  outline: 5px solid rgba(0, 0, 255, 0.7);
-  outline-offset: -5px;
 }
 
 .photo-hotel,
 .photo-motel,
-.photo-apartments {
+.photo-apartments,
+.sorting-result {
   margin-left: 73px;
-  outline: 5px solid rgba(0, 0, 255, 0.7);
-  outline-offset: -5px;
 }
 
-.price-hotel {
-  padding-left: 30px;
-  outline: 5px solid rgba(225, 0, 0, 0.7);
-  outline-offset: -5px;
-}
-
-.price-motel {
-  padding-left: 30px;
-}
-
+.price-hotel,
+.price-motel,
 .price-apartments {
   padding-left: 30px;
 }
 
 .rating {
-  float: right;
-  outline: 5px solid rgba(0, 0, 255, 0.7);
-  outline-offset: -5px;
+  margin-right: 93px;
 }
+
+/* ?
+.rating-hotel {
+  background-repeat: repeat;
+}
+*/
 
 .wrapper {
   display: grid;
-  grid-template-columns: 208px 1fr 200px;
+  grid-template-columns: 208px 1fr 223px;
+  border-top: 1px solid var(--basic-light-gray);
+
+}
+
+.wrapper img {
+  padding-top: 30px;
+}
+
+.wrapper h3 {
+  font-size: 21px;
+  line-height: 26px;
 }
 
 
@@ -642,7 +647,10 @@ text-align: center;
 .sorting-result {
   font-weight: bold;
   font-size: 21px;
+}
 
+.sorting ul {
+  margin: 0;
 }
 
 .sorting {
@@ -650,10 +658,13 @@ text-align: center;
   justify-content: start;
   font-size: 12px;
   line-height: 18px;
+  padding-top: 30px;
+  padding-bottom: 31px;
 }
 
 .sorting li {
   display: inline-block;
+  margin-right: 32px;
 }
 
 .sorting-price {
@@ -664,6 +675,8 @@ text-align: center;
   font-size: 12px;
   line-height: 18px;
   font-weight: normal;
+  padding-left: 50px;
+  margin: 0;
 }
 
 .sorting-price a {
@@ -697,12 +710,14 @@ text-align: center;
 .footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  padding: 0;
+  text-align: center;
+  box-sizing: border-box;
 }
 
 .footer {
-  padding: 24px 0;
   outline: 5px solid rgba(255, 0, 0, 0.7);
-outline-offset: -5px;
+  outline-offset: -5px;
 }
 
 .footer-contacts a {
@@ -712,37 +727,45 @@ outline-offset: -5px;
   color: var(--basic-black);
 }
 
-.footer-contacts{
+.footer-contacts {
+  margin-left: 100px;
+  padding-top: 23px;
+}
+
+.footer-contacts p {
   margin: 0;
-  width: 327px;
-  outline: 5px solid rgba(0, 255, 255, 0.7);
-outline-offset: -5px;
 }
 
 .footer-link {
   font-size: 14px;
   line-height: 26px;
-  max-width: 200px;
-  margin: 0;
-  justify-self: end;
+  margin: 0 90px 0 0;
   color: var(--basic-black);
+  padding-top: 41px;
   outline: 5px solid rgba(255, 0, 255, 0.7);
   outline-offset: -5px;
 }
 
+
 .footer-social {
   display: inline-block;
-  width: 145px;
   justify-self: center;
-  background-color: var(--basic-black); /*временно*/
+
   text-align: center;
+  padding-top: 36px;
   outline: 5px solid rgba(0, 255, 0, 0.7);
   outline-offset: -5px;
 }
 
-.footer-contacts p {
+.footer-social li {
   margin: 0;
-  width: 327px;
+  padding: 0;
+  background-color: var(--basic-light-blue);
+  width: 46px;
+  height: 48px;
+  margin-right: 6px;
+  vertical-align: top;
+
 }
 
 .footer-social ul {
