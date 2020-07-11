@@ -653,6 +653,7 @@ img {
 
 .price-result {
   display: inline-block;
+  vertical-align: middle;
 }
 
 .rating {
@@ -801,13 +802,14 @@ img {
   width: 317px;
   margin-bottom: 20px;
   margin-top: 10px;
-  background-image: url(../img/Rectangle.png);
+  background-image: url(../img/rectangle.png);
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .price-controls label {
   display: inline-block;
+  vertical-align: middle;
   width: 100px;
   padding-left: 55px;
   padding-top: 5px;
@@ -903,6 +905,7 @@ height: 4px;
 
 .sorting li {
   display: inline-block;
+  vertical-align: middle;
   margin-right: 32px;
 }
 
