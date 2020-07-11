@@ -761,9 +761,9 @@ img {
 .filter-input-checkbox + label::before {
   content: "";
   position: absolute;
-  left: -38px;
+  left: -38.5px;
   top: 0;
-  width: 19.5px;
+  width: 20px;
   height: 20px;
   border: 2px solid #FFFFFF;
   border-radius: 4px;
