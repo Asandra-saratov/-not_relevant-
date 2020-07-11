@@ -305,6 +305,7 @@ img {
 .features-second-block,
 .features-fourth-block {
   display: inline-block;
+  vertical-align: middle;
   text-align: center;
   width: 397px;
 }
