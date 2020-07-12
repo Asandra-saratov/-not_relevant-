@@ -87,7 +87,6 @@
                   </p>
             </section>
 
-            <!--чтобы убрать отступы-->
             <section>
               <ul class="features-fourth-block">
                   <li class="fourth-block-1">
@@ -128,29 +127,31 @@
             <p class="data">
               <label for="start-date">Дата заезда:</label>
               <input id="start-date" type="text" name="arrival-date" placeholder="24 апреля 2017"></p>
-            <button class="calendar1"></button >
+            <button class="calendar1" aria-label="календарь"></button >
 
             <p class="data">
               <label for="and-date">Дата выезда:</label>
               <input id="and-date" type="text" name="departure-date" placeholder="4 июля 2017"></p>
-            <button class="calendar2"></button>
+            <button class="calendar2" aria-label="календарь"></button>
 
 
             <div class="amount">
                 <label for="amount-adults">
                   Взрослые:
                 </label>
-                  <button class="button-minus" type="button">-</button>
+                <div>
+                  <button class="button-minus" type="button" aria-label="количество минус">-</button>
                   <input id="amount-adults" type="text" name="number-adults" value="2">
-                  <button class="button-plus" type="button">+</button>
-
+                  <button class="button-plus" type="button" aria-label="количество плюс">+</button>
+                </div>
                 <label for="amount-children">
                   Дети:
                 </label>
-                  <button class="button-minus" type="button">-</button>
+                <div>
+                  <button class="button-minus" type="button" aria-label="количество минус">-</button>
                   <input id="amount-children" type="text" name="number-children" value="0">
-                  <button class="button-plus" type="button">+</button>
-
+                  <button class="button-plus" type="button" aria-label="количество плюс">+</button>
+                </div>
             </div>
             <input type="submit" class="button-blue" value="Найти">
         </form>
@@ -168,7 +169,7 @@
         <section class="footer-contacts">
           <h2 class="visually-hidden">Как нас найти</h2>
           <p>
-            <a href="https://www.instagram.com/explore/tags/visitsedona/">#visitsedona</a>
+            <a aria-label="перейти по ссылке на интенсив html академии" href="https://www.instagram.com/explore/tags/visitsedona/">#visitsedona</a>
           </p>
           <p>
             <a href="tel:+74956660166">тел: +7(495) 666-01-66</a>
