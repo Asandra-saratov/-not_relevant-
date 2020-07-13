@@ -494,7 +494,6 @@ left:397px;
   border: none;
 }
 
-/*затемнение текста кнопки при нажатии???*/
 
 .subtitle-popap h2 {
   font-weight: bold;
@@ -661,7 +660,7 @@ left:397px;
 .calendar2:hover {
   position: absolute;
   right: 65px;
-  top: 145px;
+  top: 128px;
   width: 21px;
   height: 23px;
   background-image: url(../img/calendar-hover.svg);
@@ -671,14 +670,12 @@ left:397px;
 .calendar2:active {
   position: absolute;
   right: 65px;
-  top: 145px;
+  top: 128px;
   width: 21px;
   height: 23px;
   background-image: url(../img/calendar-active.svg);
   cursor: pointer;
 }
-
-
 
 
 
